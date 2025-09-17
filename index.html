@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Water Reminder 💧</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00b4d8">
+<body>
+  <div class="container">
+    <h1>💧 Stay Hydrated!</h1>
+    <label>Reminder Interval (minutes):</label>
+    <input id="interval" type="number" min="5" max="120" value="30">
+    <button onclick="startReminder()">Start</button>
+    <button onclick="stopReminder()">Stop</button>
+
+    <div class="glass">
+      <div class="fill" id="fill"></div>
+    </div>
+    <p id="status">Not started</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
